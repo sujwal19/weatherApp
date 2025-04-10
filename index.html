@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <form>
+        <input id="city-name" type="text" placeholder="Enter a city name" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="inner-container">
+
+        <div class="loading">
+          <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+          </div>
+        </div>
+
+        <div class="city-container">
+          <div class="city-name">London</div>
+          <div class="weather-condition">Clear</div>
+        </div>
+
+        <div class="temperature-container">
+          <div class="weather-icon">
+            <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" />
+          </div>
+          <div class="temp">21.00°C</div>
+          <div class="minmax">
+            <div class="min">Min: 21°C</div>
+            <div class="max">Max: 21°C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
